@@ -42,6 +42,10 @@ p {
     letter-spacing;
     word-spacing*/
 }
+.grouped-p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 .otherpara {
   color: #ffede6;
   margin: 0;
@@ -135,7 +139,7 @@ body {
 }
 /* grid gallery styles uwu */
 .gallery-page {
-  padding: 0 1rem 10rem 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 .gallery-auto-fit {
   display: grid;
