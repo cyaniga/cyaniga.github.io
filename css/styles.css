@@ -1,3 +1,5 @@
+/* color pallet: #F0C6C6 , #D9B0A9 , #F8D2C2 , #D9A9C1 , #F8C2F8  */
+/* THIS BITCH's NAME IS REBECCA*/
 *,
 *::before *::after {
   box-sizing: inherit;
@@ -5,7 +7,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans Condensed", helvetica, sans-serif;
   line-height: 1.5rem;
   /* rem is unit for sizing */
 }
@@ -20,16 +22,19 @@ h1 {
   line-height: 3rem;
 }
 h2 {
-  color: white;
-  background-color: lightblue;
+  color: #f8d2c2;
+  background-color: #d9a9c1;
+  display: flex;
   margin: 10px;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 600;
+  justify-content: center;
 }
 p {
-  color: white;
-  background-color: lightblue;
+  color: #ffede6;
+  background-color: #d9b0a9;
   margin: 10px;
   padding: 10px;
   width: 150px;
@@ -37,7 +42,17 @@ p {
     letter-spacing;
     word-spacing*/
 }
-section.container {
+.otherpara {
+  color: #ffede6;
+  margin: 0;
+  padding: 15px;
+  width: 97.3%;
+  background-color: #d9b0a9;
+  line-height: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+/*section.container {
   display: flex;
   flex-flow: row wrap;
 }
@@ -45,43 +60,26 @@ section.container a {
   flex-basis: 300px;
   margin: 20px;
   width: 300px;
-}
-.otherpara {
-  color: lightblue;
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
-  background-color: white;
-}
+}*/
 footer {
-  color: lightblue;
+  color: #a0827d;
 }
-a:link {
-  color: lightblue;
-  text-decoration: none;
-  /*border-top border-bottom: border-box */
-}
-a:visited {
-  color: rgb(69, 127, 146);
-  text-decoration: none;
-}
-
 body {
-  /*color:to change whole background color*/
+  background-color: #f8d2c2;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .header-nav {
   color: grey;
-  background-color: lightblue;
+  background-color: #d9a9c1;
   margin: 1.25rem;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  line-height: 1.5rem;
+  line-height: 0.5rem;
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
@@ -92,6 +90,8 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 0.75rem;
 }
 .nav-item {
   flex: 1 0 10%;
@@ -100,38 +100,115 @@ body {
 .logo,
 .nav-menu {
   padding: 0.8rem;
-  background-color: white;
+  background-color: #f8d2c2;
   margin: 1.5rem;
   text-decoration: none;
   flex-wrap: wrap;
-  letter-spacing: 0.2rem;
   font-weight: bolder;
+  letter-spacing: 0.2rem;
 }
 .logo {
-  color: lightblue;
+  color: #d9a9c1;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 2rem;
+  line-height: 1rem;
+  font-family: "Big Shoulders Inline Display", cursive;
+}
+.nav-menu a:link {
+  color: #d9a9c1;
+  text-decoration: none;
+}
+.nav-menu a:visited {
+  color: #8d6f7e;
+  text-decoration: none;
 }
 .nav-menu a:hover {
-  background-color: lightblue;
-  color: white;
-  text-decoration: underline;
+  /* background-color: #d9a9c1;*/
+  color: #d9a9c1;
+  text-decoration: none;
   transform: scale(1.1);
+  border-bottom: 0.1rem solid #d9a9c1;
+  transition: ease-in-out 0.2s;
 }
 .nav-menu a:active {
   transform: scale(0.9);
 }
-/* 2nd nav menu */
+/* grid gallery styles uwu */
+.gallery-page {
+  padding: 0 1rem 10rem 1rem;
+}
+.gallery-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: 0.25rem;
+}
+.gallery-span {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 200px;
+  grid-gap: 0.25rem;
+  grid-auto-flow: dense;
+}
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-img:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+}
 
-.header-nav-2 {
-  background-color: pink;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 1.25rem;
-  text-transform: lowercase;
+/* grid span */
+
+.w-1,
+.w-2,
+.w-3,
+.w-5,
+.w-6 {
+  grid-column: span 1;
 }
-.logo-2 {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  color: rgb(184, 140, 147);
-  letter-spacing: 0.1rem;
+
+.h-1,
+.h-2,
+.h-3,
+.h-4,
+.h-5,
+.h-6 {
+  grid-row: span 1;
 }
+
+/*@media (min-width: 600px) {
+  .header-nav {
+    line-height: 1.5rem;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  nav.item {
+    flex: 1 0 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-nav {
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1rem auto 2rem auto;
+    line-height: 1rem;
+  }
+  .nav-item {
+    white-space: nowrap;
+  }
+  .nav.menu {
+    width: auto;
+  }
+  .logo {
+    margin: 0 0 0.3rem;
+  }
+} */
