@@ -25,8 +25,8 @@ h2 {
   color: #f8e0d6;
   background-color: #d9a9c1;
   display: flex;
-  margin: 10px;
-  padding: 20px;
+  margin: 2rem 0 2rem 0;
+  padding: 2rem 2rem 2rem 2rem;
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 600;
@@ -36,9 +36,10 @@ h2 {
 p {
   color: #ffede6;
   background-color: #d9b0a9;
-  margin: 10px;
-  padding: 10px;
+  margin: 2rem;
+  padding: 1rem;
   width: 150px;
+  font-size: 1.25rem;
   /*font-weight:
     letter-spacing;
     word-spacing*/
@@ -56,6 +57,7 @@ p {
   line-height: 0.5rem;
   text-align: center;
   justify-content: center;
+  letter-spacing: 0.2rem;
 }
 /*section.container {
   display: flex;
@@ -140,7 +142,11 @@ body {
 }
 /* grid gallery styles uwu */
 .gallery-page {
-  padding: 0 1rem 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+  background-color: ;
+}
+.gallery-page-game {
+  padding: 0rem 1rem 2rem 1rem;
 }
 .gallery-auto-fit {
   display: grid;
@@ -166,7 +172,7 @@ body {
 }
 .gallery-img:hover {
   transform: scale(1.5);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-out;
 }
 
 /* grid span */
