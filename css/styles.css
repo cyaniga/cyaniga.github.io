@@ -148,6 +148,9 @@ body {
 .gallery-page-game {
   padding: 0rem 1rem 2rem 1rem;
 }
+.gallery-page-2d {
+  justify-content: center;
+}
 .gallery-auto-fit {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
