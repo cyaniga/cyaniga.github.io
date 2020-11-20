@@ -86,7 +86,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  line-height: 0.5rem;
+  line-height: 1rem;
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
@@ -143,7 +143,6 @@ body {
 /* grid gallery styles uwu */
 .gallery-page {
   padding: 2rem 1rem 2rem 1rem;
-  background-color: ;
 }
 .gallery-page-game {
   padding: 0rem 1rem 2rem 1rem;
