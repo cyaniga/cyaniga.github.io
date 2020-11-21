@@ -180,6 +180,9 @@ body {
 
 .hero-nav-menu {
   background: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 /*homepage hero*/
@@ -233,7 +236,7 @@ body {
   letter-spacing: 0.05rem;
   font-weight: bold;
   transform: lowercase;
-  color: #f8d2c2;
+  color: #f8c2f8;
   background: none;
   line-height: 1rem;
   margin: 0;
@@ -243,7 +246,7 @@ body {
 .hero-text {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: #f8d2c2;
+  color: #f8c2f8;
   background: none;
 }
 
@@ -254,16 +257,19 @@ body {
 
 .hero-logo {
   background: none;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .hero-button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background: none;
-  color: #f8d2c2;
+  color: #f8c2f8;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 3px solid #f8d2c2;
+  border: 3px solid #f8c2f8;
   border-radius: 10px;
 }
 
@@ -280,6 +286,8 @@ body {
 
 .footer-logo {
   white-space: nowrap;
+  color: #d9a9c1;
+  padding-top: 2rem;
 }
 
 .footer-social {
@@ -370,14 +378,13 @@ body {
     font-size: 3rem;
     line-height: 3rem;
   }
-
-  .hero-text-box {
-    padding: 2rem;
-  }
-
   .hero-text {
     font-size: 1.5rem;
     line-height: 1.5rem;
+  }
+
+  .hero-text-box {
+    padding: 2rem;
   }
 
   .footer-nav {
@@ -386,6 +393,7 @@ body {
 
   .footer-logo {
     flex-basis: 100%;
+    color: #d9a9c1;
   }
   .nav-menu {
     width: 100%;
@@ -447,17 +455,24 @@ body {
   .nav-bar {
     justify-content: space-between;
     padding: 1rem 0;
-    margin: 1rem auto 2rem auto;
+    margin: 0rem auto 1rem auto;
     line-height: 1rem;
   }
 
   .header-nav {
     justify-content: space-between;
     padding: 1rem 0;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem auto 1rem auto;
     line-height: 1rem;
   }
-
+  .hero-heading {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
   .hero-nav {
     width: 100%;
   }
@@ -474,6 +489,6 @@ body {
   }
   .logo {
     justify-self: start;
-    margin: 0 0 0.3rem;
+    margin: 0 0 1rem;
   }
 }
