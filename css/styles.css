@@ -28,7 +28,7 @@ h2 {
   color: #f8e0d6;
   background-color: #d9a9c1;
   display: flex;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 2rem 2rem 2rem;
   padding: 2rem 2rem 2rem 2rem;
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -77,13 +77,56 @@ body {
   background-color: #f8e0d6;
   max-width: 1000px;
   margin: 0 auto;
+  background-color: #f8d2c2;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%23d9b0a9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+
+/* about styles */
+
+.about-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  width: 20rem;
+  height: auto;
+  padding: 1rem;
+  background-color: #d9a9c1;
+  margin: 2rem;
+}
+
+.about-h2 {
+  font-family: "Big Shoulders Inline Display", cursive;
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  word-spacing: 1rem;
+}
+
+.about-p {
+  font-size: 1.5rem;
+}
+
+.about-p,
+.about-h2 {
+  width: 25rem;
+  text-align: unset;
+  padding: 1rem;
+}
+
+.about-text-box {
+  display: table;
+  align-content: center;
+}
+
 /* nav bar styles (Gracie) */
+
 .header-nav {
   color: grey;
-  background-color: #d9a9c1;
-  margin: 1.25rem;
-  padding: 5px;
+  background-color: rgba(217, 169, 193, 0.8);
+  margin: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -109,27 +152,30 @@ body {
 .social-nav-item {
   flex: 1 1 10%;
 }
-.logo,
-.nav-item {
-  white-space: nowrap;
-}
-.logo,
-.nav-menu {
-  padding: 0.8rem;
-  background-color: #f8e0d6;
-  margin: 1.5rem;
-  text-decoration: none;
-  flex-wrap: wrap;
-  font-weight: bolder;
-  letter-spacing: 0.2rem;
-}
 .logo {
   color: #d9a9c1;
+  background-color: rgba(248, 210, 194, 0.85);
   margin: 0 auto;
   font-size: 2rem;
   line-height: 1rem;
   font-family: "Big Shoulders Inline Display", cursive;
+  padding: 0.5rem;
 }
+.logo,
+.nav-item {
+  white-space: nowrap;
+}
+.nav-menu {
+  padding: 0.5rem;
+  background-color: rgba(248, 210, 194, 0.85);
+  margin: 0.5rem;
+  text-decoration: none;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  text-align: end;
+}
+
 .nav-menu a:link {
   color: #d9a9c1;
   text-decoration: none;
@@ -139,7 +185,7 @@ body {
   text-decoration: none;
 }
 .nav-menu a:hover {
-  /* background-color: #d9a9c1;*/
+  /* background-color: #F8D2C2;*/
   color: #d9a9c1;
   text-decoration: none;
   transform: scale(1.1);
@@ -401,7 +447,12 @@ body {
   }
   nav.item {
     flex: 1 1;
+    justify-content: space-around;
   }
+  .nav-bar {
+    width: 100%;
+  }
+
   .w-1 {
     grid-column: span 1;
   }
@@ -488,7 +539,8 @@ body {
     justify-self: end;
   }
   .logo {
-    justify-self: start;
-    margin: 0 0 1rem;
+    justify-self: center;
+    margin: 0.5rem;
+    display: flex;
   }
 }
