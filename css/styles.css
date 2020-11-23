@@ -54,6 +54,10 @@ h3 {
   font-size: 1.25rem;
   text-align: center;
 }
+
+a:hover {
+  text-decoration: none;
+}
 .grouped-p {
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -372,6 +376,11 @@ a:hover {
 .hero-p {
   margin: 0.5rem;
   padding: 5px;
+  text-decoration: none;
+}
+
+.hero-p a {
+  text-decoration: none;
 }
 
 .hero-logo {
@@ -390,6 +399,7 @@ a:hover {
   font-weight: bold;
   border: 3px solid #f8c2f8;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .hero-button:hover {
@@ -617,5 +627,10 @@ a:hover {
   .logo {
     justify-self: center;
     margin: 0.5rem;
+  }
+  .hero-image-box {
+    height: 100vh;
+    max-width: 100%;
+    align-content: center;
   }
 }
