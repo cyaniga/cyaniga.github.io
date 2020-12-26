@@ -82,7 +82,6 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #f8d2c2;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%23d9b0a9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 /* about styles */
@@ -121,7 +120,7 @@ body {
 
 .header-nav {
   color: grey;
-  background-color: rgba(217, 169, 193, 0.8);
+  background-color: rgb(182, 133, 158);
   margin: 0.5rem;
   padding: 0.5rem;
   display: flex;
@@ -152,7 +151,7 @@ body {
   flex: 1 1 10%;
 }
 .logo {
-  color: #d9a9c1;
+  color: rgb(182, 133, 158);
   background-color: rgba(248, 210, 194, 0.85);
   margin: 0 auto;
   font-size: 2rem;
@@ -181,11 +180,11 @@ body {
 }
 
 .nav-menu a:link {
-  color: #d9a9c1;
+  color: rgb(182, 133, 158);
   text-decoration: none;
 }
 .nav-menu a:visited {
-  color: #8d6f7e;
+  color: #a17870;
   text-decoration: none;
 }
 .nav-menu a:hover {
@@ -203,7 +202,7 @@ body {
 /* portfolio */
 
 .port-div {
-  background-color: rgba(217, 169, 193);
+  background-color: rgb(182, 133, 158);
   padding: 0.5rem;
   margin: 2rem;
   width: 60%;
@@ -219,7 +218,7 @@ body {
   margin: 0.5rem;
   align-content: unset;
   justify-content: unset;
-  color: rgba(217, 169, 193);
+  color: rgb(182, 133, 158);
   background-color: #f8d2c2;
   text-decoration: none;
 }
@@ -239,7 +238,8 @@ body {
 }
 
 .port-div-h2:hover {
-  background-color: #f0c6c6;
+  background-color: #d9a9c1;
+  transition: ease-in-out 0.5s;
 }
 /* portfolio navbar */
 
