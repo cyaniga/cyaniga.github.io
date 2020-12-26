@@ -36,6 +36,12 @@ h2 {
   justify-content: center;
   text-align: center;
 }
+
+.logo-page {
+  margin: 2rem;
+  padding: 10rem;
+}
+
 p {
   color: #ffede6;
   background-color: #d9b0a9;
@@ -81,7 +87,7 @@ body {
   background-color: #f8e0d6;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #f8d2c2;
+  background-color: #e9d6cd;
 }
 
 /* about styles */
@@ -152,7 +158,7 @@ body {
 }
 .logo {
   color: rgb(182, 133, 158);
-  background-color: rgba(248, 210, 194, 0.85);
+  background-color: #e9d6cd;
   margin: 0 auto;
   font-size: 2rem;
   line-height: 1rem;
@@ -168,7 +174,7 @@ body {
 }
 .nav-menu {
   padding: 0.5rem;
-  background-color: rgba(248, 210, 194, 0.85);
+  background-color: #e9d6cd;
   margin: 0.5rem;
   text-decoration: none;
   flex-wrap: wrap;
@@ -219,7 +225,7 @@ body {
   align-content: unset;
   justify-content: unset;
   color: rgb(182, 133, 158);
-  background-color: #f8d2c2;
+  background-color: #e9d6cd;
   text-decoration: none;
 }
 
@@ -229,7 +235,7 @@ body {
   justify-content: unset;
   background: none;
   margin: 0rem;
-  color: #f8d2c2;
+  color: #e9d6cd;
   font-weight: bold;
 }
 
@@ -240,6 +246,10 @@ body {
 .port-div-h2:hover {
   background-color: #d9a9c1;
   transition: ease-in-out 0.5s;
+}
+
+.logo-page {
+  padding: 3rem;
 }
 /* portfolio navbar */
 
